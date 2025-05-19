@@ -32,6 +32,7 @@ plt.show()
 import pandas as pd
 import matplotlib.pyplot as plt
 
+df = pd.read_csv("users.csv")
 usuarios_45_60 = df[(df['edad'] >= 45) & (df['edad'] <= 60)]
 
 masculinos_45_60 = usuarios_45_60[usuarios_45_60['genero'].str.lower() == 'male']['nombre']
